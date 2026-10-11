@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SchedulePro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="browser-shell">
+      <div class="browser-bar">
+        <div class="window-dots" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="address">app.schedulepro.com/dashboard</div>
+      </div>
+
+      <main class="app-shell">
+        <aside class="sidebar">
+          <a class="brand" href="#dashboard" aria-label="SchedulePro dashboard">
+            <span class="brand-mark">SP</span>
+            <span>SchedulePro</span>
+          </a>
+
+          <nav class="nav-list" aria-label="Main navigation">
+            <a class="nav-item active" href="#dashboard" data-page="dashboard">
+              <span>▣</span> Dashboard
+            </a>
+            <a class="nav-item" href="#event-types" data-page="event-types">
+              <span>□</span> Event Types
+            </a>
+            <a class="nav-item" href="#bookings" data-page="bookings">
+              <span>◷</span> Bookings
+            </a>
+            <a class="nav-item" href="#availability" data-page="availability">
+              <span>◫</span> Availability
+            </a>
+          </nav>
+        </aside>
+
+        <section class="workspace">
+          <header class="topbar">
+            <div>
+              <p class="eyebrow">SchedulePro</p>
+              <h1 id="page-title">Dashboard</h1>
+            </div>
+            <div class="topbar-actions">
+              <a class="ghost-button" href="booking.html">Share booking page</a>
+              <div class="google-login-container" data-google-login="host"></div>
+              <button class="primary-button">+ New Event Type</button>
+              <div class="user-chip">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=96&q=80" alt="Emma Jackson" />
+                <span>Emma Jackson</span>
+              </div>
+            </div>
+          </header>
+
+          <section class="page active" id="dashboard">
+            <div class="summary-grid">
+              <article class="metric-card">
+                <span class="metric-icon teal">◷</span>
+                <p>Upcoming Bookings</p>
+                <strong>3</strong>
+                <small>Next call at 10:00 AM</small>
+              </article>
+              <article class="metric-card">
+                <span class="metric-icon blue">▦</span>
+                <p>Total Bookings</p>
+                <strong>128</strong>
+                <small class="positive">18% vs last month</small>
+              </article>
+              <article class="metric-card">
+                <span class="metric-icon green">✓</span>
+                <p>Booking Rate</p>
+                <strong>72%</strong>
+                <small class="positive">9% vs last month</small>
+              </article>
+            </div>
+
+            <div class="content-grid">
+              <article class="panel">
+                <div class="panel-header">
+                  <h2>Event Types</h2>
+                  <a href="#event-types" data-page="event-types">View all</a>
+                </div>
+                <div class="event-row">
+                  <span class="dot teal-bg"></span>
+                  <div><strong>Strategist Session</strong><small>30 mins, One-on-One</small></div>
+                  <span class="slug">/strategist-session</span>
+                </div>
+                <div class="event-row">
+                  <span class="dot blue-bg"></span>
+                  <div><strong>Discovery Call</strong><small>15 mins, One-on-One</small></div>
+                  <span class="slug">/discovery-call</span>
+                </div>
+                <div class="event-row">
+                  <span class="dot violet-bg"></span>
+                  <div><strong>Strategy Review</strong><small>60 mins, One-on-One</small></div>
+                  <span class="slug">/strategy-review</span>
+                </div>
+              </article>
+
+              <article class="panel">
+                <div class="panel-header">
+                  <h2>Upcoming Bookings</h2>
+                  <a href="#bookings" data-page="bookings">View all</a>
+                </div>
+                <div class="booking-row">
+                  <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=80&q=80" alt="James Smith" />
+                  <div>
+                    <strong>James Smith</strong>
+                    <small>Strategist Session · Today, 10:00 AM</small>
+                  </div>
+                  <span>Google Meet</span>
+                </div>
+                <div class="booking-row">
+                  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&q=80" alt="Sarah Johnson" />
+                  <div>
+                    <strong>Sarah Johnson</strong>
+                    <small>Discovery Call · Today, 1:00 PM</small>
+                  </div>
+                  <span>Google Meet</span>
+                </div>
+                <div class="booking-row">
+                  <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=80&q=80" alt="Michael Brown" />
+                  <div>
+                    <strong>Michael Brown</strong>
+                    <small>Strategy Review · Tomorrow, 9:30 AM</small>
+                  </div>
+                  <span>Google Meet</span>
+                </div>
+              </article>
+            </div>
+
+            <article class="panel">
+              <div class="panel-header">
+                <h2>Analytics</h2>
+                <a href="#bookings" data-page="bookings">View report</a>
+              </div>
+              <div class="analytics-grid">
+                <div><small>Bookings</small><strong>128</strong><span class="positive">18% vs last month</span></div>
+                <div><small>Booking Rate</small><strong>72%</strong><span class="positive">9% vs last month</span></div>
+                <div><small>Reschedule Rate</small><strong>8%</strong><span class="positive">2% lower</span></div>
+                <div><small>No-Show Rate</small><strong>4%</strong><span class="positive">1% lower</span></div>
+              </div>
+            </article>
+          </section>
+
+          <section class="page" id="event-types">
+            <div class="page-tools">
+              <div>
+                <h2>Event Types</h2>
+                <p>Create free booking links for every call type.</p>
+              </div>
+              <button class="primary-button">+ Create event type</button>
+            </div>
+            <div class="card-grid three">
+              <article class="event-card">
+                <span class="dot teal-bg"></span>
+                <h3>Strategist Session</h3>
+                <p>Free 30 minute one-on-one session for new prospects.</p>
+                <div class="card-meta"><span>30 min</span><span>Google Meet</span><span>/strategist-session</span></div>
+              </article>
+              <article class="event-card">
+                <span class="dot blue-bg"></span>
+                <h3>Discovery Call</h3>
+                <p>Quick qualification call to understand needs and next steps.</p>
+                <div class="card-meta"><span>15 min</span><span>Google Meet</span><span>/discovery-call</span></div>
+              </article>
+              <article class="event-card">
+                <span class="dot violet-bg"></span>
+                <h3>Strategy Review</h3>
+                <p>Longer planning session for existing clients and warm leads.</p>
+                <div class="card-meta"><span>60 min</span><span>Google Meet</span><span>/strategy-review</span></div>
+              </article>
+            </div>
+          </section>
+
+          <section class="page" id="bookings">
+            <div class="page-tools">
+              <div>
+                <h2>Bookings</h2>
+                <p>Review confirmed, upcoming, and rescheduled free calls.</p>
+              </div>
+              <div class="segmented" data-booking-filter>
+                <button class="active" data-filter="upcoming">Upcoming</button>
+                <button data-filter="past">Past</button>
+                <button data-filter="canceled">Canceled</button>
+              </div>
+            </div>
+            <article class="panel table-panel">
+              <div class="table-row table-head"><span>Guest</span><span>Event</span><span>Date</span><span>Status</span><span>Action</span></div>
+              <div class="table-row booking-record" data-status="upcoming"><span>James Smith</span><span>Strategist Session</span><span>Today, 10:00 AM</span><strong>Confirmed</strong></div>
+              <div class="table-row booking-record" data-status="upcoming"><span>Sarah Johnson</span><span>Discovery Call</span><span>Today, 1:00 PM</span><strong>Confirmed</strong></div>
+              <div class="table-row booking-record" data-status="upcoming"><span>Michael Brown</span><span>Strategy Review</span><span>Tomorrow, 9:30 AM</span><strong>Confirmed</strong></div>
+              <div class="table-row booking-record" data-status="upcoming"><span>Ava Patel</span><span>Strategist Session</span><span>Fri, 3:00 PM</span><strong>Rescheduled</strong></div>
+              <div class="table-row booking-record" data-status="past"><span>Noah Williams</span><span>Strategist Session</span><span>May 30, 11:00 AM</span><strong>Completed</strong></div>
+              <div class="table-row booking-record" data-status="past"><span>Mia Chen</span><span>Discovery Call</span><span>May 28, 2:00 PM</span><strong>Completed</strong></div>
+              <div class="table-row booking-record" data-status="past"><span>Liam Davis</span><span>Strategy Review</span><span>May 24, 9:30 AM</span><strong>Completed</strong></div>
+              <div class="table-row booking-record" data-status="canceled"><span>Olivia Martin</span><span>Strategist Session</span><span>June 3, 4:00 PM</span><strong>Canceled</strong></div>
+              <div class="table-row booking-record" data-status="canceled"><span>Ethan Lee</span><span>Discovery Call</span><span>June 1, 12:00 PM</span><strong>Canceled</strong></div>
+              <div class="empty-bookings" hidden>No bookings found for this filter.</div>
+            </article>
+          </section>
+
+          <section class="page" id="availability">
+            <div class="page-tools">
+              <div>
+                <h2>Availability</h2>
+                <p>Set when guests can book time with you.</p>
+              </div>
+              <button class="primary-button" data-save-availability>Save changes</button>
+            </div>
+            <article class="panel availability-panel">
+              <div class="availability-row" data-availability-row data-available-start="9:00 AM" data-available-end="5:00 PM">
+                <div class="day-control"><strong>Monday</strong><label class="day-toggle"><input type="checkbox" checked /><span></span><em>Available</em></label></div>
+                <span class="start-time">9:00 AM</span><span class="end-time">5:00 PM</span><button>+</button>
+              </div>
+              <div class="availability-row" data-availability-row data-available-start="9:00 AM" data-available-end="5:00 PM">
+                <div class="day-control"><strong>Tuesday</strong><label class="day-toggle"><input type="checkbox" checked /><span></span><em>Available</em></label></div>
+                <span class="start-time">9:00 AM</span><span class="end-time">5:00 PM</span><button>+</button>
+              </div>
+              <div class="availability-row" data-availability-row data-available-start="10:00 AM" data-available-end="4:00 PM">
+                <div class="day-control"><strong>Wednesday</strong><label class="day-toggle"><input type="checkbox" checked /><span></span><em>Available</em></label></div>
+                <span class="start-time">10:00 AM</span><span class="end-time">4:00 PM</span><button>+</button>
+              </div>
+              <div class="availability-row" data-availability-row data-available-start="9:00 AM" data-available-end="5:00 PM">
+                <div class="day-control"><strong>Thursday</strong><label class="day-toggle"><input type="checkbox" checked /><span></span><em>Available</em></label></div>
+                <span class="start-time">9:00 AM</span><span class="end-time">5:00 PM</span><button>+</button>
+              </div>
+              <div class="availability-row" data-availability-row data-available-start="9:00 AM" data-available-end="2:00 PM">
+                <div class="day-control"><strong>Friday</strong><label class="day-toggle"><input type="checkbox" checked /><span></span><em>Available</em></label></div>
+                <span class="start-time">9:00 AM</span><span class="end-time">2:00 PM</span><button>+</button>
+              </div>
+              <div class="availability-row muted" data-availability-row data-available-start="9:00 AM" data-available-end="5:00 PM">
+                <div class="day-control"><strong>Saturday</strong><label class="day-toggle"><input type="checkbox" /><span></span><em>Unavailable</em></label></div>
+                <span class="start-time">Unavailable</span><span class="end-time"></span><button>+</button>
+              </div>
+              <div class="availability-row muted" data-availability-row data-available-start="9:00 AM" data-available-end="5:00 PM">
+                <div class="day-control"><strong>Sunday</strong><label class="day-toggle"><input type="checkbox" /><span></span><em>Unavailable</em></label></div>
+                <span class="start-time">Unavailable</span><span class="end-time"></span><button>+</button>
+              </div>
+            </article>
+
+            <article class="panel unavailable-panel">
+              <div class="panel-header">
+                <div>
+                  <h2>Unavailable times</h2>
+                  <p>Block specific dates and times when guests cannot book you.</p>
+                </div>
+              </div>
+              <form class="unavailable-form">
+                <label>Date<input type="date" id="unavailable-date" value="2026-06-18" /></label>
+                <label>Start time<input type="time" id="unavailable-start" value="13:00" /></label>
+                <label>End time<input type="time" id="unavailable-end" value="15:00" /></label>
+                <label>Note<input type="text" id="unavailable-note" placeholder="Lunch, travel, personal appointment" /></label>
+                <button class="primary-button" type="submit">Add unavailable time</button>
+              </form>
+              <div class="unavailable-list" aria-live="polite">
+                <div class="unavailable-item">
+                  <div>
+                    <strong>June 18, 2026</strong>
+                    <span>1:00 PM - 3:00 PM · Personal appointment</span>
+                  </div>
+                  <button type="button" aria-label="Remove unavailable time">Remove</button>
+                </div>
+                <div class="unavailable-item">
+                  <div>
+                    <strong>June 21, 2026</strong>
+                    <span>All day · Weekend off</span>
+                  </div>
+                  <button type="button" aria-label="Remove unavailable time">Remove</button>
+                </div>
+              </div>
+            </article>
+          </section>
+
+          <section class="page booking-page" id="booking-page">
+            <div class="booking-layout">
+              <aside class="booking-profile">
+                <a class="brand booking-brand" href="#dashboard" data-page="dashboard">
+                  <span class="brand-mark">SP</span>
+                  <span>SchedulePro</span>
+                </a>
+                <img class="profile-photo" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=160&q=80" alt="Emma Jackson" />
+                <p class="host-name">Emma Jackson</p>
+                <div class="session-box">
+                  <h2>Strategist Session</h2>
+                  <p>Free 30 minute call to discuss your goals and identify the best next step.</p>
+                  <div class="session-meta"><span>◷ 30 min</span><span>▣ One-on-One</span><span>Google Meet</span></div>
+                </div>
+              </aside>
+
+              <section class="booking-main">
+                <div class="booking-heading">
+                  <div>
+                    <p class="eyebrow">Pick a time</p>
+                    <h2>Select a date and time</h2>
+                  </div>
+                  <select aria-label="Timezone">
+                    <option>(GMT+05:30) India Standard Time</option>
+                    <option>(GMT-04:00) Eastern Time</option>
+                    <option>(GMT+00:00) UTC</option>
+                  </select>
+                </div>
+
+                <div class="booking-picker">
+                  <div class="calendar-card">
+                    <div class="calendar-header"><button>‹</button><strong>June 2026</strong><button>›</button></div>
+                    <div class="calendar-grid">
+                      <span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span>
+                      <button>1</button><button>2</button><button>3</button><button>4</button><button>5</button><button>6</button><button>7</button>
+                      <button>8</button><button>9</button><button>10</button><button>11</button><button class="selected">12</button><button>13</button><button>14</button>
+                      <button>15</button><button>16</button><button>17</button><button>18</button><button>19</button><button>20</button><button>21</button>
+                      <button>22</button><button>23</button><button>24</button><button>25</button><button>26</button><button>27</button><button>28</button>
+                      <button>29</button><button>30</button>
+                    </div>
+                  </div>
+                  <div class="time-card">
+                    <h3>Available times</h3>
+                    <div class="time-grid">
+                      <button>9:00 AM</button><button class="selected">10:00 AM</button><button>11:00 AM</button><button>1:00 PM</button><button>2:00 PM</button><button>3:00 PM</button>
+                    </div>
+                  </div>
+                </div>
+
+                <form class="details-form">
+                  <h3>Your details</h3>
+                  <div class="form-grid">
+                    <label>Name<input type="text" placeholder="Your name" /></label>
+                    <label>Email address<input type="email" placeholder="you@example.com" /></label>
+                    <label>Phone number <span>(optional)</span><input type="tel" placeholder="+91 98765 43210" /></label>
+                    <label class="full">Additional information<textarea placeholder="Share anything that will help prepare for the call"></textarea></label>
+                  </div>
+                  <button class="primary-button confirm-button" type="button">Confirm the booking</button>
+                </form>
+              </section>
+            </div>
+          </section>
+        </section>
+      </main>
+    </div>
+
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
