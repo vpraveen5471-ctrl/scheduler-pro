@@ -1,0 +1,13 @@
+{
+  "name": "schedulepro",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A scheduling app for hosts and guests.",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
+
