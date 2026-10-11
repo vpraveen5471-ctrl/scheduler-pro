@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book a Strategist Session - SchedulePro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="public-booking">
+    <div class="browser-shell">
+      <div class="browser-bar">
+        <div class="window-dots" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="address">schedulepro.com/booking/strategist-session</div>
+      </div>
+
+      <main class="app-shell">
+        <section class="workspace">
+          <h1 id="page-title" hidden>Guest Booking Page</h1>
+          <section class="page booking-page active" id="booking-page">
+            <div class="booking-layout">
+              <aside class="booking-profile">
+                <a class="brand booking-brand" href="index.html" aria-label="SchedulePro dashboard">
+                  <span class="brand-mark">SP</span>
+                  <span>SchedulePro</span>
+                </a>
+                <img class="profile-photo" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=160&q=80" alt="Emma Jackson" />
+                <p class="host-name">Emma Jackson</p>
+                <div class="session-box">
+                  <h2>Strategist Session</h2>
+                  <p>Free 30 minute call to discuss your goals and identify the best next step.</p>
+                  <div class="session-meta"><span>30 min</span><span>One-on-One</span><span>Google Meet</span></div>
+                </div>
+              </aside>
+
+              <section class="booking-main">
+                <div class="booking-heading">
+                  <div>
+                    <p class="eyebrow">Pick a time</p>
+                    <h2>Select a date and time</h2>
+                  </div>
+                  <select aria-label="Timezone">
+                    <option>(GMT+05:30) India Standard Time</option>
+                    <option>(GMT-04:00) Eastern Time</option>
+                    <option>(GMT+00:00) UTC</option>
+                  </select>
+                </div>
+
+                <div class="booking-picker">
+                  <div class="calendar-card">
+                    <div class="calendar-header"><button type="button">&lsaquo;</button><strong>June 2026</strong><button type="button">&rsaquo;</button></div>
+                    <div class="calendar-grid"></div>
+                  </div>
+                  <div class="time-card">
+                    <h3>Available times</h3>
+                    <div class="time-grid"></div>
+                  </div>
+                </div>
+
+                <form class="details-form">
+                  <h3>Your details</h3>
+                  <div class="google-login-container guest-google-button" data-google-login="guest"></div>
+                  <div class="form-divider"><span>or enter your details</span></div>
+                  <div class="form-grid">
+                    <label>Name<input type="text" placeholder="Your name" /></label>
+                    <label>Email address<input type="email" placeholder="you@example.com" /></label>
+                    <label>Phone number <span>(optional)</span><input type="tel" placeholder="+91 98765 43210" /></label>
+                    <label class="full">Additional information<textarea placeholder="Share anything that will help prepare for the call"></textarea></label>
+                  </div>
+                  <button class="primary-button confirm-button" type="button">Confirm the booking</button>
+                </form>
+              </section>
+            </div>
+          </section>
+        </section>
+      </main>
+    </div>
+
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
